@@ -18,7 +18,7 @@ type EntityIterator[T any, V EntityDecoder[T]] struct {
 	v      V
 }
 
-func NewEntityStream[T any, V EntityDecoder[T]](
+func NewEntityIterator[T any, V EntityDecoder[T]](
 	cursor *mongo.Cursor,
 	v V,
 ) *EntityIterator[T, V] {
